@@ -1,0 +1,5 @@
+# fica só no computador (fotos pessoais, logos, wallpapers e pacotes)
+instagram/
+*.zip
+.claude/
+.vercel/

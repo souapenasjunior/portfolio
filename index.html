@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Junior · Desenvolvedor de software</title>
+  <meta name="description" content="Junior (Adonias Junior), desenvolvedor formado em Análise e Desenvolvimento de Sistemas. Programas para Windows, apps Android, extensões e sites.">
+  <meta property="og:title" content="Junior · Desenvolvedor de software">
+  <meta property="og:description" content="Programas para Windows, apps Android, extensões e sites.">
+  <meta property="og:image" content="img/logo-sj-grande.webp">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0f0f0d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230f0f0d'/%3E%3Ctext x='32' y='44' font-family='Arial Narrow,Arial' font-weight='900' font-size='30' text-anchor='middle' fill='%23f1ede4'%3ESJ%3C/text%3E%3Crect x='44' y='46' width='8' height='8' fill='%23ff5b23'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Junior">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=20261112e">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="frame bar__inner">
+    <a class="bar__mark" href="#topo" aria-label="Voltar ao topo">SJ<i></i></a>
+    <nav class="bar__nav" aria-label="Seções">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#outros">Outros</a>
+      <a href="#stack">Stack</a>
+    </nav>
+    <p class="bar__clock mono" aria-label="Horário de Brasília"><span id="relogio">--:--</span> BRT</p>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- ABERTURA -->
+  <section class="hero frame">
+
+    <p class="hero__lead rise" style="--d:1">Olá, eu sou o Junior, desenvolvedor de software.</p>
+
+    <div class="hero__actions rise" style="--d:2">
+      <a class="btn btn--solid" href="#projetos">Ver projetos <span aria-hidden="true">↓</span></a>
+    </div>
+
+    <ul class="thumbs" aria-label="Projetos">
+        <li class="thumb rise" style="--d:4">
+          <a href="#p1">
+            <div class="thumb__img"><img src="img/grupo-car.webp" alt="" loading="eager"></div>
+            <p class="thumb__name">Grupo CAR<span>01</span></p>
+            <p class="thumb__type">Site</p>
+          </a>
+        </li>
+        <li class="thumb rise" style="--d:5">
+          <a href="#p2">
+            <div class="thumb__img"><img src="img/mesa-final.webp" alt="" loading="eager"></div>
+            <p class="thumb__name">Rumo à Mesa Final<span>02</span></p>
+            <p class="thumb__type">Jogo 3D</p>
+          </a>
+        </li>
+        <li class="thumb rise" style="--d:6">
+          <a href="#p3">
+            <div class="thumb__img"><img src="img/house-rush.webp" alt="" loading="eager"></div>
+            <p class="thumb__name">House Rush<span>03</span></p>
+            <p class="thumb__type">Jogo 3D</p>
+          </a>
+        </li>
+        <li class="thumb rise" style="--d:7">
+          <a href="#p4">
+            <div class="thumb__img thumb__img--phone"><img src="img/learn-boxing.webp" alt="" loading="eager"></div>
+            <p class="thumb__name">Learn Boxing<span>04</span></p>
+            <p class="thumb__type">App para celular</p>
+          </a>
+        </li>
+        <li class="thumb rise" style="--d:8">
+          <a href="#p5">
+            <div class="thumb__img"><img src="img/app-dj.webp" alt="" loading="eager"></div>
+            <p class="thumb__name">APP DJ<span>05</span></p>
+            <p class="thumb__type">App para Windows</p>
+          </a>
+        </li>
+        <li class="thumb rise" style="--d:9">
+          <a href="#p6">
+            <div class="thumb__img"><img src="img/controle-total.webp" alt="" loading="eager"></div>
+            <p class="thumb__name">Controle Total<span>06</span></p>
+            <p class="thumb__type">App para Windows</p>
+          </a>
+        </li>
+        <li class="thumb rise" style="--d:10">
+          <a href="#p7">
+            <div class="thumb__img"><img src="img/omniblock.webp" alt="" loading="eager"></div>
+            <p class="thumb__name">OmniBlock<span>07</span></p>
+            <p class="thumb__type">Extensão Chrome</p>
+          </a>
+        </li>
+        <li class="thumb rise" style="--d:11">
+          <a href="#p8">
+            <div class="thumb__img"><img src="img/meu-bolso.webp" alt="" loading="eager"></div>
+            <p class="thumb__name">Meu Bolso<span>08</span></p>
+            <p class="thumb__type">App para Windows</p>
+          </a>
+        </li>
+    </ul>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="block frame" id="sobre">
+    <p class="label mono reveal"><span>(01)</span> Sobre</p>
+    <div class="about2">
+      <div class="bio">
+        <p class="reveal">Sou desenvolvedor de software, formado em Análise e Desenvolvimento de Sistemas pelo Centro Universitário ETEP, e apaixonado por tecnologia desde cedo.</p>
+        <p class="reveal">Comecei aos 15 anos, na época do Blogger, estudando HTML e CSS por conta própria. Sem curso, criei diversos sites, de filmes a portais de aplicativos para Android.</p>
+        <p class="reveal">Sou curioso e gosto de entender como as coisas funcionam por dentro. Hoje desenvolvo aplicativos para Windows e Android, extensões para navegador e sites, e sigo aprendendo a cada projeto.</p>
+        <dl class="edu reveal">
+          <dt class="mono">Formação</dt>
+          <dd>Análise e Desenvolvimento de Sistemas<span>Centro Universitário ETEP · 2025</span></dd>
+        </dl>
+      </div>
+      <figure class="memory reveal">
+        <img src="img/blogger-2014.webp" alt="Painel do Blogger em 2014, configurando o blog Moto G Tunado" width="1368" height="778" loading="lazy">
+        <figcaption class="mono"><span>2014</span> Painel do Blogger do Moto G Tunado, um dos meus primeiros sites</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="block frame" id="projetos">
+    <p class="label mono reveal"><span>(02)</span> Projetos</p>
+
+    <div class="deck">
+
+      <article class="pcard" data-gallery="img/g/grupo-car-1.webp,img/g/grupo-car-2.webp,img/g/grupo-car-3.webp,img/g/grupo-car-4.webp" data-title="Grupo CAR" id="p1" style="--i:0">
+        <div class="pcard__inner">
+          <div class="pcard__text">
+            <p class="pcard__top mono"><span>01 / 08</span><span>Site para empresa</span></p>
+            <h3 class="pcard__title">Grupo CAR</h3>
+            <p class="pcard__desc">Site para três empresas automotivas de Belo Horizonte, com agendamento pelo WhatsApp e painel para editar o conteúdo.</p>
+            <ul class="pcard__stack mono"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Painel admin</li></ul>
+            <div class="shots"><button class="shot" type="button" data-i="0" aria-label="Ver foto 1"><img src="img/g/t/grupo-car-1.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="1" aria-label="Ver foto 2"><img src="img/g/t/grupo-car-2.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="2" aria-label="Ver foto 3"><img src="img/g/t/grupo-car-3.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="3" aria-label="Ver foto 4"><img src="img/g/t/grupo-car-4.webp" alt="" loading="lazy"></button></div>
+          </div>
+          <div class="stage" data-tilt data-open="0" role="button" tabindex="0" aria-label="Abrir fotos">
+            <div class="ambient" style="--img:url(img/grupo-car.webp)"></div>
+            <figure class="device device--browser">
+              <div class="browser__bar"><i></i><i></i><i></i><span class="mono">Grupo CAR · Do sonho à pista</span></div>
+              <img src="img/grupo-car.webp" alt="Tela do Grupo CAR" width="1400" height="875" loading="lazy">
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="pcard" data-gallery="img/g/mesa-final-1.webp,img/g/mesa-final-2.webp,img/g/mesa-final-3.webp,img/g/mesa-final-4.webp" data-title="Rumo à Mesa Final" id="p2" style="--i:1">
+        <div class="pcard__inner">
+          <div class="pcard__text">
+            <p class="pcard__top mono"><span>02 / 08</span><span>Jogo 3D no navegador</span></p>
+            <h3 class="pcard__title">Rumo à Mesa Final</h3>
+            <p class="pcard__desc">Jogo de Texas Hold'em em 3D que ensina poker do zero: escola com 19 lições, partidas com professor, carreira em 6 cassinos e mesa online com amigos.</p>
+            <ul class="pcard__stack mono"><li>React</li><li>three.js</li><li>TypeScript</li><li>Supabase</li></ul>
+            <div class="shots"><button class="shot" type="button" data-i="0" aria-label="Ver foto 1"><img src="img/g/t/mesa-final-1.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="1" aria-label="Ver foto 2"><img src="img/g/t/mesa-final-2.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="2" aria-label="Ver foto 3"><img src="img/g/t/mesa-final-3.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="3" aria-label="Ver foto 4"><img src="img/g/t/mesa-final-4.webp" alt="" loading="lazy"></button></div>
+          </div>
+          <div class="stage" data-tilt data-open="0" role="button" tabindex="0" aria-label="Abrir fotos">
+            <div class="ambient" style="--img:url(img/mesa-final.webp)"></div>
+            <figure class="device device--win">
+              <img src="img/mesa-final.webp" alt="Tela do Rumo à Mesa Final" width="800" height="500" loading="lazy">
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="pcard" data-gallery="img/g/house-rush-1.webp,img/g/house-rush-2.webp,img/g/house-rush-3.webp" data-title="House Rush" id="p3" style="--i:2">
+        <div class="pcard__inner">
+          <div class="pcard__text">
+            <p class="pcard__top mono"><span>03 / 08</span><span>Jogo 3D no navegador</span></p>
+            <h3 class="pcard__title">House Rush</h3>
+            <p class="pcard__desc">Corrida de carrinhos de brinquedo com pistas montadas pela casa, à noite, contra 5 adversários e com 19 carros para escolher.</p>
+            <ul class="pcard__stack mono"><li>three.js</li><li>JavaScript</li></ul>
+            <div class="shots"><button class="shot" type="button" data-i="0" aria-label="Ver foto 1"><img src="img/g/t/house-rush-1.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="1" aria-label="Ver foto 2"><img src="img/g/t/house-rush-2.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="2" aria-label="Ver foto 3"><img src="img/g/t/house-rush-3.webp" alt="" loading="lazy"></button></div>
+          </div>
+          <div class="stage" data-tilt data-open="0" role="button" tabindex="0" aria-label="Abrir fotos">
+            <div class="ambient" style="--img:url(img/house-rush.webp)"></div>
+            <figure class="device device--browser">
+              <div class="browser__bar"><i></i><i></i><i></i><span class="mono">House Rush</span></div>
+              <img src="img/house-rush.webp" alt="Tela do House Rush" width="800" height="450" loading="lazy">
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="pcard" data-gallery="img/g/learn-boxing-1.webp,img/g/learn-boxing-2.webp,img/g/learn-boxing-3.webp,img/g/learn-boxing-4.webp,img/g/learn-boxing-5.webp,img/g/learn-boxing-6.webp,img/g/learn-boxing-7.webp,img/g/learn-boxing-8.webp,img/g/learn-boxing-9.webp" data-title="Learn Boxing" id="p4" style="--i:3">
+        <div class="pcard__inner">
+          <div class="pcard__text">
+            <p class="pcard__top mono"><span>04 / 08</span><span>App Android e iPhone</span></p>
+            <h3 class="pcard__title">Learn Boxing</h3>
+            <p class="pcard__desc">App de treino de boxe com saco de pancada: treinador por voz, combos e animações 3D dos golpes.</p>
+            <ul class="pcard__stack mono"><li>TypeScript</li><li>React Native</li><li>Expo</li><li>Blender</li></ul>
+            <div class="shots"><button class="shot" type="button" data-i="0" aria-label="Ver foto 1"><img src="img/g/t/learn-boxing-1.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="1" aria-label="Ver foto 2"><img src="img/g/t/learn-boxing-2.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="2" aria-label="Ver foto 3"><img src="img/g/t/learn-boxing-3.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="3" aria-label="Ver foto 4"><img src="img/g/t/learn-boxing-4.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="4" aria-label="Ver foto 5"><img src="img/g/t/learn-boxing-5.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="5" aria-label="Ver foto 6"><img src="img/g/t/learn-boxing-6.webp" alt="" loading="lazy"><span>+3</span></button></div>
+          </div>
+          <div class="stage" data-tilt data-open="0" role="button" tabindex="0" aria-label="Abrir fotos">
+            <div class="ambient" style="--img:url(img/learn-boxing.webp)"></div>
+            <div class="device device--phones">
+              <figure class="phone"><img src="img/learn-boxing.webp" alt="Tela do Learn Boxing" width="585" height="1266" loading="lazy"></figure>
+              <figure class="phone"><img src="img/learn-boxing-2.webp" alt="Outra tela do Learn Boxing" width="416" height="900" loading="lazy"></figure>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="pcard" data-gallery="img/g/app-dj-1.webp,img/g/app-dj-2.webp,img/g/app-dj-3.webp,img/g/app-dj-4.webp" data-title="APP DJ" id="p5" style="--i:4">
+        <div class="pcard__inner">
+          <div class="pcard__text">
+            <p class="pcard__top mono"><span>05 / 08</span><span>App para Windows</span></p>
+            <h3 class="pcard__title">APP DJ</h3>
+            <p class="pcard__desc">DJ automático no PC: analisa BPM e tom das músicas e monta um set mixado, com viradas e efeitos, entregue em MP3.</p>
+            <ul class="pcard__stack mono"><li>Python</li><li>Análise de áudio</li><li>FastAPI</li></ul>
+            <div class="shots"><button class="shot" type="button" data-i="0" aria-label="Ver foto 1"><img src="img/g/t/app-dj-1.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="1" aria-label="Ver foto 2"><img src="img/g/t/app-dj-2.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="2" aria-label="Ver foto 3"><img src="img/g/t/app-dj-3.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="3" aria-label="Ver foto 4"><img src="img/g/t/app-dj-4.webp" alt="" loading="lazy"></button></div>
+          </div>
+          <div class="stage" data-tilt data-open="0" role="button" tabindex="0" aria-label="Abrir fotos">
+            <div class="ambient" style="--img:url(img/app-dj.webp)"></div>
+            <figure class="device device--win">
+              <img src="img/app-dj.webp" alt="Tela do APP DJ" width="1400" height="875" loading="lazy">
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="pcard" data-gallery="img/g/controle-total-1.webp,img/g/controle-total-2.webp,img/g/controle-total-3.webp,img/g/controle-total-4.webp,img/g/controle-total-5.webp,img/g/controle-total-6.webp,img/g/controle-total-7.webp" data-title="Controle Total" id="p6" style="--i:5">
+        <div class="pcard__inner">
+          <div class="pcard__text">
+            <p class="pcard__top mono"><span>06 / 08</span><span>App para Windows</span></p>
+            <h3 class="pcard__title">Controle Total</h3>
+            <p class="pcard__desc">Otimizador de Windows para jogos: modo jogo automático, biblioteca de jogos, FPS na tela e ajustes do sistema.</p>
+            <ul class="pcard__stack mono"><li>C#</li><li>.NET</li><li>WPF</li><li>Instalador</li></ul>
+            <div class="shots"><button class="shot" type="button" data-i="0" aria-label="Ver foto 1"><img src="img/g/t/controle-total-1.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="1" aria-label="Ver foto 2"><img src="img/g/t/controle-total-2.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="2" aria-label="Ver foto 3"><img src="img/g/t/controle-total-3.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="3" aria-label="Ver foto 4"><img src="img/g/t/controle-total-4.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="4" aria-label="Ver foto 5"><img src="img/g/t/controle-total-5.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="5" aria-label="Ver foto 6"><img src="img/g/t/controle-total-6.webp" alt="" loading="lazy"><span>+1</span></button></div>
+          </div>
+          <div class="stage" data-tilt data-open="0" role="button" tabindex="0" aria-label="Abrir fotos">
+            <div class="ambient" style="--img:url(img/controle-total.webp)"></div>
+            <figure class="device device--win">
+              <img src="img/controle-total.webp" alt="Tela do Controle Total" width="1360" height="880" loading="lazy">
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="pcard" data-gallery="img/g/omniblock-1.webp,img/g/omniblock-2.webp,img/g/omniblock-3.webp,img/g/omniblock-4.webp,img/g/omniblock-5.webp,img/g/omniblock-6.webp" data-title="OmniBlock" id="p7" style="--i:6">
+        <div class="pcard__inner">
+          <div class="pcard__text">
+            <p class="pcard__top mono"><span>07 / 08</span><span>Extensão para Chrome</span></p>
+            <h3 class="pcard__title">OmniBlock</h3>
+            <p class="pcard__desc">Extensão para o Chrome que bloqueia anúncios, rastreadores e sites de golpe, com YouTube e Twitch sem anúncios e recusa automática de cookies.</p>
+            <ul class="pcard__stack mono"><li>JavaScript</li><li>Chrome MV3</li><li>Service Worker</li></ul>
+            <div class="shots"><button class="shot" type="button" data-i="0" aria-label="Ver foto 1"><img src="img/g/t/omniblock-1.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="1" aria-label="Ver foto 2"><img src="img/g/t/omniblock-2.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="2" aria-label="Ver foto 3"><img src="img/g/t/omniblock-3.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="3" aria-label="Ver foto 4"><img src="img/g/t/omniblock-4.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="4" aria-label="Ver foto 5"><img src="img/g/t/omniblock-5.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="5" aria-label="Ver foto 6"><img src="img/g/t/omniblock-6.webp" alt="" loading="lazy"></button></div>
+          </div>
+          <div class="stage" data-tilt data-open="0" role="button" tabindex="0" aria-label="Abrir fotos">
+            <div class="ambient" style="--img:url(img/omniblock.webp)"></div>
+            <figure class="device device--browser">
+              <div class="browser__bar"><i></i><i></i><i></i><span class="mono">OmniBlock · Visão geral</span></div>
+              <img src="img/omniblock.webp" alt="Tela do OmniBlock" width="1280" height="800" loading="lazy">
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="pcard" data-gallery="img/g/meu-bolso-1.webp,img/g/meu-bolso-2.webp,img/g/meu-bolso-3.webp,img/g/meu-bolso-4.webp,img/g/meu-bolso-5.webp,img/g/meu-bolso-6.webp,img/g/meu-bolso-7.webp" data-title="Meu Bolso" id="p8" style="--i:7">
+        <div class="pcard__inner">
+          <div class="pcard__text">
+            <p class="pcard__top mono"><span>08 / 08</span><span>App para Windows</span></p>
+            <h3 class="pcard__title">Meu Bolso</h3>
+            <p class="pcard__desc">Controle financeiro pessoal e offline, simples de usar: contas a pagar, contas fixas, cartões, dívidas e metas, com os dados só no computador.</p>
+            <ul class="pcard__stack mono"><li>Electron</li><li>JavaScript</li></ul>
+            <div class="shots"><button class="shot" type="button" data-i="0" aria-label="Ver foto 1"><img src="img/g/t/meu-bolso-1.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="1" aria-label="Ver foto 2"><img src="img/g/t/meu-bolso-2.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="2" aria-label="Ver foto 3"><img src="img/g/t/meu-bolso-3.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="3" aria-label="Ver foto 4"><img src="img/g/t/meu-bolso-4.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="4" aria-label="Ver foto 5"><img src="img/g/t/meu-bolso-5.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="5" aria-label="Ver foto 6"><img src="img/g/t/meu-bolso-6.webp" alt="" loading="lazy"><span>+1</span></button></div>
+          </div>
+          <div class="stage" data-tilt data-open="0" role="button" tabindex="0" aria-label="Abrir fotos">
+            <div class="ambient" style="--img:url(img/meu-bolso.webp)"></div>
+            <figure class="device device--win">
+              <img src="img/meu-bolso.webp" alt="Tela do Meu Bolso" width="1400" height="875" loading="lazy">
+            </figure>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- OUTROS PROJETOS -->
+  <section class="block frame" id="outros">
+    <p class="label mono reveal"><span>(03)</span> Outros projetos</p>
+    <div class="grid">
+      <article class="gcard reveal" data-gallery="img/g/motion-control-1.webp,img/g/motion-control-2.webp,img/g/motion-control-3.webp,img/g/motion-control-4.webp" data-title="Motion+ Control">
+        <div class="gcard__img" data-open="0" role="button" tabindex="0" aria-label="Abrir fotos"><span class="gcard__count mono">4 fotos</span><img src="img/motion-control.webp" alt="Motion+ Control" loading="lazy"></div>
+        <div class="gcard__body">
+          <p class="gcard__type mono">App Android · Bluetooth</p>
+          <h3 class="gcard__title">Motion+ Control</h3>
+          <p class="gcard__desc">App Android para a caixa de som Soundcore Motion+: volume, equalizador, bateria e timer, via Bluetooth.</p>
+          <div class="shots"><button class="shot" type="button" data-i="0" aria-label="Ver foto 1"><img src="img/g/t/motion-control-1.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="1" aria-label="Ver foto 2"><img src="img/g/t/motion-control-2.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="2" aria-label="Ver foto 3"><img src="img/g/t/motion-control-3.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="3" aria-label="Ver foto 4"><img src="img/g/t/motion-control-4.webp" alt="" loading="lazy"></button></div>
+          <ul class="pcard__stack mono"><li>Kotlin</li><li>Jetpack Compose</li><li>Bluetooth</li></ul>
+        </div>
+      </article>
+      <article class="gcard reveal" data-gallery="img/g/night-cruise-1.webp" data-title="Night Cruise">
+        <div class="gcard__img" data-open="0" role="button" tabindex="0" aria-label="Abrir fotos"><img src="img/night-cruise.webp" alt="Night Cruise" loading="lazy"></div>
+        <div class="gcard__body">
+          <p class="gcard__type mono">Jogo 3D no navegador</p>
+          <h3 class="gcard__title">Night Cruise</h3>
+          <p class="gcard__desc">Passeio noturno de carro pelas vias expressas de Tóquio.</p>
+          
+          <ul class="pcard__stack mono"><li>three.js</li><li>JavaScript</li></ul>
+        </div>
+      </article>
+      <article class="gcard reveal" data-gallery="img/g/omniplay-1.webp,img/g/omniplay-2.webp,img/g/omniplay-3.webp" data-title="OmniPlay">
+        <div class="gcard__img" data-open="0" role="button" tabindex="0" aria-label="Abrir fotos"><span class="gcard__count mono">3 fotos</span><img src="img/omniplay.webp" alt="OmniPlay" loading="lazy"></div>
+        <div class="gcard__body">
+          <p class="gcard__type mono">App para Windows</p>
+          <h3 class="gcard__title">OmniPlay</h3>
+          <p class="gcard__desc">Player de lives e vídeos da Twitch, Kick, YouTube e TikTok, com chat, gravação e bloqueio de anúncios.</p>
+          <div class="shots"><button class="shot" type="button" data-i="0" aria-label="Ver foto 1"><img src="img/g/t/omniplay-1.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="1" aria-label="Ver foto 2"><img src="img/g/t/omniplay-2.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="2" aria-label="Ver foto 3"><img src="img/g/t/omniplay-3.webp" alt="" loading="lazy"></button></div>
+          <ul class="pcard__stack mono"><li>Electron</li><li>JavaScript</li></ul>
+        </div>
+      </article>
+      <article class="gcard reveal" data-gallery="img/g/hex-voice-1.webp,img/g/hex-voice-2.webp,img/g/hex-voice-3.webp,img/g/hex-voice-4.webp" data-title="Hex Voice">
+        <div class="gcard__img" data-open="0" role="button" tabindex="0" aria-label="Abrir fotos"><span class="gcard__count mono">4 fotos</span><img src="img/hex-voice.webp" alt="Hex Voice" loading="lazy"></div>
+        <div class="gcard__body">
+          <p class="gcard__type mono">App para Windows</p>
+          <h3 class="gcard__title">Hex Voice</h3>
+          <p class="gcard__desc">Chat de voz para jogar com os amigos, com tela compartilhada, mensagens e arquivos.</p>
+          <div class="shots"><button class="shot" type="button" data-i="0" aria-label="Ver foto 1"><img src="img/g/t/hex-voice-1.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="1" aria-label="Ver foto 2"><img src="img/g/t/hex-voice-2.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="2" aria-label="Ver foto 3"><img src="img/g/t/hex-voice-3.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="3" aria-label="Ver foto 4"><img src="img/g/t/hex-voice-4.webp" alt="" loading="lazy"></button></div>
+          <ul class="pcard__stack mono"><li>JavaScript</li></ul>
+        </div>
+      </article>
+      <article class="gcard reveal" data-gallery="img/g/kidshub-1.webp" data-title="KidsHub">
+        <div class="gcard__img" data-open="0" role="button" tabindex="0" aria-label="Abrir fotos"><img src="img/kidshub.webp" alt="KidsHub" loading="lazy"></div>
+        <div class="gcard__body">
+          <p class="gcard__type mono">Sistema web</p>
+          <h3 class="gcard__title">KidsHub</h3>
+          <p class="gcard__desc">Controle de entrada e saída de crianças em igrejas, com reconhecimento facial no totem.</p>
+          
+          <ul class="pcard__stack mono"><li>TypeScript</li><li>React</li><li>Supabase</li></ul>
+        </div>
+      </article>
+      <article class="gcard reveal" data-gallery="img/g/k500-studio-1.webp,img/g/k500-studio-2.webp,img/g/k500-studio-3.webp,img/g/k500-studio-4.webp" data-title="K500 Studio">
+        <div class="gcard__img" data-open="0" role="button" tabindex="0" aria-label="Abrir fotos"><span class="gcard__count mono">4 fotos</span><img src="img/k500-studio.webp" alt="K500 Studio" loading="lazy"></div>
+        <div class="gcard__body">
+          <p class="gcard__type mono">App para Windows</p>
+          <h3 class="gcard__title">K500 Studio</h3>
+          <p class="gcard__desc">Configurador do teclado Machenike K500: teclas, iluminação, macros e perfis.</p>
+          <div class="shots"><button class="shot" type="button" data-i="0" aria-label="Ver foto 1"><img src="img/g/t/k500-studio-1.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="1" aria-label="Ver foto 2"><img src="img/g/t/k500-studio-2.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="2" aria-label="Ver foto 3"><img src="img/g/t/k500-studio-3.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="3" aria-label="Ver foto 4"><img src="img/g/t/k500-studio-4.webp" alt="" loading="lazy"></button></div>
+          <ul class="pcard__stack mono"><li>C#</li><li>WebView2</li><li>USB HID</li></ul>
+        </div>
+      </article>
+      <article class="gcard reveal" data-gallery="img/g/aztec-control-1.webp,img/g/aztec-control-2.webp,img/g/aztec-control-3.webp" data-title="Aztec Control">
+        <div class="gcard__img" data-open="0" role="button" tabindex="0" aria-label="Abrir fotos"><span class="gcard__count mono">3 fotos</span><img src="img/aztec-control.webp" alt="Aztec Control" loading="lazy"></div>
+        <div class="gcard__body">
+          <p class="gcard__type mono">App para Windows</p>
+          <h3 class="gcard__title">Aztec Control</h3>
+          <p class="gcard__desc">Configurador do mouse Kysona Aztec: DPI, botões, sensor, macros e perfis.</p>
+          <div class="shots"><button class="shot" type="button" data-i="0" aria-label="Ver foto 1"><img src="img/g/t/aztec-control-1.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="1" aria-label="Ver foto 2"><img src="img/g/t/aztec-control-2.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="2" aria-label="Ver foto 3"><img src="img/g/t/aztec-control-3.webp" alt="" loading="lazy"></button></div>
+          <ul class="pcard__stack mono"><li>Electron</li><li>node-hid</li></ul>
+        </div>
+      </article>
+      <article class="gcard reveal" data-gallery="img/g/mod-menu-1.webp" data-title="Junior Mod Menu">
+        <div class="gcard__img" data-open="0" role="button" tabindex="0" aria-label="Abrir fotos"><img src="img/mod-menu.webp" alt="Junior Mod Menu" loading="lazy"></div>
+        <div class="gcard__body">
+          <p class="gcard__type mono">Mod para GTA V</p>
+          <h3 class="gcard__title">Junior Mod Menu</h3>
+          <p class="gcard__desc">Mod menu offline para GTA V, com criador de mapas e busca em português.</p>
+          
+          <ul class="pcard__stack mono"><li>C++</li><li>ScriptHookV</li></ul>
+        </div>
+      </article>
+      <article class="gcard reveal" data-gallery="img/g/twitch-recorder-1.webp" data-title="Twitch Live Recorder">
+        <div class="gcard__img" data-open="0" role="button" tabindex="0" aria-label="Abrir fotos"><img src="img/twitch-recorder.webp" alt="Twitch Live Recorder" loading="lazy"></div>
+        <div class="gcard__body">
+          <p class="gcard__type mono">Extensão para Chrome</p>
+          <h3 class="gcard__title">Twitch Live Recorder</h3>
+          <p class="gcard__desc">Grava lives da Twitch em 1080p60 com áudio, em segundo plano e evitando os anúncios.</p>
+          
+          <ul class="pcard__stack mono"><li>JavaScript</li><li>Chrome MV3</li></ul>
+        </div>
+      </article>
+      <article class="gcard reveal" data-gallery="img/g/tcl-ar-1.webp,img/g/tcl-ar-2.webp" data-title="TCL Ar">
+        <div class="gcard__img" data-open="0" role="button" tabindex="0" aria-label="Abrir fotos"><span class="gcard__count mono">2 fotos</span><img src="img/tcl-ar.webp" alt="TCL Ar" loading="lazy"></div>
+        <div class="gcard__body">
+          <p class="gcard__type mono">App para Windows</p>
+          <h3 class="gcard__title">TCL Ar</h3>
+          <p class="gcard__desc">Controla os ar-condicionados TCL pelo Windows: temperatura, modo, ventilação e direção do ar.</p>
+          <div class="shots"><button class="shot" type="button" data-i="0" aria-label="Ver foto 1"><img src="img/g/t/tcl-ar-1.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="1" aria-label="Ver foto 2"><img src="img/g/t/tcl-ar-2.webp" alt="" loading="lazy"></button></div>
+          <ul class="pcard__stack mono"><li>Electron</li><li>JavaScript</li><li>API em nuvem</li></ul>
+        </div>
+      </article>
+      <article class="gcard reveal" data-gallery="img/g/goalrush-1.webp" data-title="GoalRush Arena">
+        <div class="gcard__img" data-open="0" role="button" tabindex="0" aria-label="Abrir fotos"><img src="img/goalrush.webp" alt="GoalRush Arena" loading="lazy"></div>
+        <div class="gcard__body">
+          <p class="gcard__type mono">Jogo no navegador</p>
+          <h3 class="gcard__title">GoalRush Arena</h3>
+          <p class="gcard__desc">Futebol de peteleco online 1x1, com amigos e coleção de fichas.</p>
+          
+          <ul class="pcard__stack mono"><li>JavaScript</li></ul>
+        </div>
+      </article>
+      <article class="gcard reveal" data-gallery="img/g/vigia-1.webp" data-title="Vigia">
+        <div class="gcard__img" data-open="0" role="button" tabindex="0" aria-label="Abrir fotos"><img src="img/vigia.webp" alt="Vigia" loading="lazy"></div>
+        <div class="gcard__body">
+          <p class="gcard__type mono">App para Windows</p>
+          <h3 class="gcard__title">Vigia</h3>
+          <p class="gcard__desc">Monitor de câmeras Wi-Fi: ao vivo, controle da câmera, gravações e detecção de movimento.</p>
+          
+          <ul class="pcard__stack mono"><li>Python</li><li>PySide6</li><li>FFmpeg</li></ul>
+        </div>
+      </article>
+      <article class="gcard reveal" data-gallery="img/g/limpeza-1.webp,img/g/limpeza-2.webp,img/g/limpeza-3.webp,img/g/limpeza-4.webp" data-title="Controle Total Limpeza">
+        <div class="gcard__img" data-open="0" role="button" tabindex="0" aria-label="Abrir fotos"><span class="gcard__count mono">4 fotos</span><img src="img/limpeza.webp" alt="Controle Total Limpeza" loading="lazy"></div>
+        <div class="gcard__body">
+          <p class="gcard__type mono">App para Windows</p>
+          <h3 class="gcard__title">Controle Total Limpeza</h3>
+          <p class="gcard__desc">Limpeza do Windows: arquivos e caches, registro, aparelhos desconectados, rede e reparo.</p>
+          <div class="shots"><button class="shot" type="button" data-i="0" aria-label="Ver foto 1"><img src="img/g/t/limpeza-1.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="1" aria-label="Ver foto 2"><img src="img/g/t/limpeza-2.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="2" aria-label="Ver foto 3"><img src="img/g/t/limpeza-3.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="3" aria-label="Ver foto 4"><img src="img/g/t/limpeza-4.webp" alt="" loading="lazy"></button></div>
+          <ul class="pcard__stack mono"><li>C#</li><li>WPF</li><li>.NET</li></ul>
+        </div>
+      </article>
+      <article class="gcard reveal" data-gallery="img/g/print-pagina-1.webp" data-title="Print da Página Completa">
+        <div class="gcard__img" data-open="0" role="button" tabindex="0" aria-label="Abrir fotos"><img src="img/print-pagina.webp" alt="Print da Página Completa" loading="lazy"></div>
+        <div class="gcard__body">
+          <p class="gcard__type mono">Extensão para Chrome</p>
+          <h3 class="gcard__title">Print da Página Completa</h3>
+          <p class="gcard__desc">Tira print da página inteira, do topo até o final, numa imagem só.</p>
+          
+          <ul class="pcard__stack mono"><li>JavaScript</li><li>Chrome MV3</li></ul>
+        </div>
+      </article>
+      <article class="gcard reveal" data-gallery="img/g/desligamento-1.webp" data-title="Desligamento Programado">
+        <div class="gcard__img" data-open="0" role="button" tabindex="0" aria-label="Abrir fotos"><img src="img/desligamento.webp" alt="Desligamento Programado" loading="lazy"></div>
+        <div class="gcard__body">
+          <p class="gcard__type mono">App para Windows</p>
+          <h3 class="gcard__title">Desligamento Programado</h3>
+          <p class="gcard__desc">Agenda o desligamento do PC e fecha os programas à força, sem a tela de espera.</p>
+          
+          <ul class="pcard__stack mono"><li>C#</li></ul>
+        </div>
+      </article>
+      <article class="gcard reveal" data-gallery="img/g/sod2-1.webp,img/g/sod2-2.webp,img/g/sod2-3.webp" data-title="SoD2 Co-op Livre">
+        <div class="gcard__img" data-open="0" role="button" tabindex="0" aria-label="Abrir fotos"><span class="gcard__count mono">3 fotos</span><img src="img/sod2.webp" alt="SoD2 Co-op Livre" loading="lazy"></div>
+        <div class="gcard__body">
+          <p class="gcard__type mono">Mod para State of Decay 2</p>
+          <h3 class="gcard__title">SoD2 Co-op Livre</h3>
+          <p class="gcard__desc">Instalador de mod co-op: o convidado usa a base do amigo, com ajustes no jogo.</p>
+          <div class="shots"><button class="shot" type="button" data-i="0" aria-label="Ver foto 1"><img src="img/g/t/sod2-1.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="1" aria-label="Ver foto 2"><img src="img/g/t/sod2-2.webp" alt="" loading="lazy"></button><button class="shot" type="button" data-i="2" aria-label="Ver foto 3"><img src="img/g/t/sod2-3.webp" alt="" loading="lazy"></button></div>
+          <ul class="pcard__stack mono"><li>Python</li></ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAIXA -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>C#</span><b>●</b><span class="o">Kotlin</span><b>●</b><span>TypeScript</span><b>●</b><span class="o">Jetpack Compose</span><b>●</b><span>React Native</span><b>●</b><span class="o">WPF</span><b>●</b><span>Electron</span><b>●</b><span class="o">Bluetooth</span><b>●</b><span>Chrome MV3</span><b>●</b><span class="o">Blender</span><b>●</b>
+      <span>C#</span><b>●</b><span class="o">Kotlin</span><b>●</b><span>TypeScript</span><b>●</b><span class="o">Jetpack Compose</span><b>●</b><span>React Native</span><b>●</b><span class="o">WPF</span><b>●</b><span>Electron</span><b>●</b><span class="o">Bluetooth</span><b>●</b><span>Chrome MV3</span><b>●</b><span class="o">Blender</span><b>●</b>
+    </div>
+  </div>
+
+  <!-- STACK -->
+  <section class="block frame" id="stack">
+    <p class="label mono reveal"><span>(04)</span> Stack</p>
+    <dl class="stack">
+      <div class="reveal"><dt>Linguagens</dt><dd>C# / TypeScript / JavaScript / Kotlin / Python / C++ / HTML e CSS</dd></div>
+      <div class="reveal"><dt>Desktop</dt><dd>.NET / WPF / WinForms + WebView2 / Electron</dd></div>
+      <div class="reveal"><dt>Mobile</dt><dd>React Native / Expo / Kotlin / Jetpack Compose</dd></div>
+      <div class="reveal"><dt>Web e 3D</dt><dd>Sites / Extensões do Chrome / three.js / Blender</dd></div>
+      <div class="reveal"><dt>Aparelhos</dt><dd>Bluetooth / USB HID / APIs REST / Engenharia reversa</dd></div>
+      <div class="reveal"><dt>Rotina</dt><dd>Git e GitHub / Testes automatizados / Vercel / IA no desenvolvimento</dd></div>
+    </dl>
+  </section>
+
+</main>
+
+<footer class="foot frame mono">
+  <span>© <span class="ano">2026</span> Junior</span>
+  <a href="mailto:contatoadoniasjunior@gmail.com">contatoadoniasjunior@gmail.com</a>
+  <a href="#topo">Topo ↑</a>
+</footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Fotos do projeto">
+  <div class="lb__top"><p class="lb__title" id="lbTitle"></p><p class="lb__count mono" id="lbCount"></p><button class="lb__close" id="lbClose" type="button" aria-label="Fechar">✕</button></div>
+  <button class="lb__nav lb__prev" id="lbPrev" type="button" aria-label="Foto anterior">‹</button>
+  <img class="lb__img" id="lbImg" alt="">
+  <button class="lb__nav lb__next" id="lbNext" type="button" aria-label="Próxima foto">›</button>
+</div>
+
+<script src="script.js?v=20261112e"></script>
+</body>
+</html>
