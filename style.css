@@ -495,3 +495,33 @@ body { -webkit-tap-highlight-color: transparent; }
   .lb__top { padding: 8px var(--pad); }
   .lb__img { max-height: calc(100vh - 70px); max-height: calc(100dvh - 70px); padding-bottom: 8px; }
 }
+
+/* Sobre: só o texto, centralizado */
+.sobre--centro .label { text-align: center; }
+.sobre--centro .about2 { display: block; }
+.sobre--centro .bio { margin: 0 auto; text-align: center; max-width: 46rem; }
+.sobre--centro .edu { max-width: 30rem; margin-left: auto; margin-right: auto; }
+
+/* ---------- movimento ao rolar (desligado com "reduzir movimento") ---------- */
+.progresso { position: fixed; top: 0; left: 0; right: 0; height: 2px; z-index: 60; pointer-events: none; background: var(--accent); transform-origin: 0 50%; transform: scaleX(0); box-shadow: 0 0 12px rgba(255,91,35,.55); }
+.hero--movel { will-change: transform, opacity; }
+/* abertura: título entra palavra por palavra, saindo do desfoque */
+.hero__lead .w { display: inline-block; opacity: 0; transform: translateY(.55em) rotate(1.5deg); filter: blur(8px); animation: palavra 1s cubic-bezier(.16,1,.3,1) forwards; animation-delay: calc(var(--i) * 75ms + 120ms); }
+@keyframes palavra { to { opacity: 1; transform: none; filter: blur(0); } }
+/* sobre: palavras acendem conforme a leitura */
+.bio .pal { opacity: var(--a, .16); transition: opacity .18s linear; }
+/* stack: linha entra de lado e o traço se desenha */
+.js .stack div.reveal { transform: translateX(-28px); }
+.js .stack div.reveal.is-in { transform: none; }
+.js .stack div { position: relative; border-bottom-color: transparent; }
+.js .stack div::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px; background: linear-gradient(90deg, var(--accent), var(--rule) 30%); transform: scaleX(0); transform-origin: 0 50%; transition: transform 1.3s cubic-bezier(.16,1,.3,1) .15s; }
+.js .stack div.is-in::after { transform: scaleX(1); }
+/* faixa de linguagens: quem move é o script (velocidade e direção acompanham a rolagem) */
+.marquee--scroll .marquee__track { animation: none; will-change: transform; }
+@media (prefers-reduced-motion: reduce) {
+  .progresso { display: none; }
+  .hero__lead .w { opacity: 1; transform: none; filter: none; animation: none; }
+  .bio .pal { opacity: 1; }
+  .js .stack div { border-bottom-color: var(--rule); }
+  .js .stack div::after { display: none; }
+}

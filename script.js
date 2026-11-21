@@ -122,3 +122,71 @@ lb.addEventListener('touchend', (e) => {
   if (Math.abs(dx) > 50) mostra(atual + (dx < 0 ? 1 : -1));
   toqueX = null;
 });
+
+// ---------- movimento ao rolar ----------
+if (!reduz.matches) {
+  const lim = (v, a, b) => Math.min(b, Math.max(a, v));
+
+  // barra de leitura no topo
+  const barra = document.createElement('div');
+  barra.className = 'progresso';
+  document.body.appendChild(barra);
+
+  // abertura: título palavra por palavra
+  const hero = document.querySelector('.hero');
+  const lead = document.querySelector('.hero__lead');
+  if (lead) {
+    lead.classList.remove('rise');
+    lead.innerHTML = lead.textContent.trim().split(/\s+/).map((p, i) => `<span class="w" style="--i:${i}">${p}</span>`).join(' ');
+  }
+  if (hero) hero.classList.add('hero--movel');
+
+  // sobre: cada palavra vira um pedaço que acende com a rolagem
+  const bio = document.querySelector('.bio');
+  const palavras = [];
+  if (bio) bio.querySelectorAll(':scope > p').forEach((p) => {
+    p.innerHTML = p.textContent.trim().split(/\s+/).map(t => `<span class="pal">${t}</span>`).join(' ');
+    palavras.push(...p.querySelectorAll('.pal'));
+  });
+
+  // faixa de linguagens guiada pela rolagem
+  const faixa = document.querySelector('.marquee');
+  const trilho = document.querySelector('.marquee__track');
+  if (faixa) faixa.classList.add('marquee--scroll');
+  let x = 0, vel = 0, dir = 1, yAnt = window.scrollY, ultimo = performance.now();
+
+  const quadro = (agora) => {
+    const dt = Math.min(64, agora - ultimo); ultimo = agora;
+    const y = window.scrollY, vh = window.innerHeight;
+    const dy = y - yAnt; yAnt = y;
+
+    // barra de leitura
+    const total = document.documentElement.scrollHeight - vh;
+    barra.style.transform = `scaleX(${total > 0 ? lim(y / total, 0, 1) : 0})`;
+
+    // abertura sobe mais devagar e some ao rolar
+    if (hero && y < vh * 1.2) {
+      hero.style.transform = `translate3d(0, ${y * 0.28}px, 0)`;
+      hero.style.opacity = lim(1 - y / (vh * 0.75), 0, 1);
+    }
+
+    // palavras do "Sobre" acendem da primeira à última
+    if (palavras.length) {
+      const r = bio.getBoundingClientRect();
+      const prog = lim((vh * 0.82 - r.top) / (r.height + vh * 0.25), 0, 1) * (palavras.length + 6);
+      palavras.forEach((w, i) => w.style.setProperty('--a', (0.16 + 0.84 * lim(prog - i, 0, 1)).toFixed(3)));
+    }
+
+    // faixa: anda sozinha, acelera e inclina com a rolagem, segue a direção
+    if (trilho) {
+      if (dy) dir = dy > 0 ? 1 : -1;
+      vel += (Math.abs(dy) - vel) * 0.12;
+      x -= (0.045 + vel * 0.028) * dt * dir;
+      const meio = trilho.scrollWidth / 2;
+      if (meio) { if (x <= -meio) x += meio; if (x > 0) x -= meio; }
+      trilho.style.transform = `translate3d(${x}px, 0, 0) skewX(${lim(-dir * vel * 0.35, -9, 9).toFixed(2)}deg)`;
+    }
+    requestAnimationFrame(quadro);
+  };
+  requestAnimationFrame(quadro);
+}
