@@ -562,3 +562,8 @@ body { -webkit-tap-highlight-color: transparent; }
   .js .stack div::after { transform: none; opacity: 0; transition: opacity 1.2s ease .15s; }
   .js .stack div.is-in::after { opacity: 1; }
 }
+
+/* ---------- celular: a abertura ocupa a primeira tela inteira ---------- */
+@media (max-width: 700px) {
+  .hero { min-height: calc(100vh - 61px); min-height: calc(100svh - 61px); display: flex; flex-direction: column; justify-content: center; padding-top: 32px; padding-bottom: 72px; }
+}
